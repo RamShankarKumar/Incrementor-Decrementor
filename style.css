@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+
+:root{
+    --white: #fff;
+    --black: #1c2b2d;
+    --blue: #31326f;
+    --light-blue: #005490;
+    --color-primary: #9d0191;
+    --color-sec: #db6400;
+    --grey: #eee;
+    --dark-grey: #222831;
+}
+
+
+/* Universal style (Do this all the time)*/
+*, *::before, *::after{ 
+    /*put this ::after and ::before because * doesnot include thiese two things.*/
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box; /*border-box means the total width and height of a box is calculated including padding size and border size but not the margin size.*/
+    font-size: 16px;
+}
+
+/* HTML and Body style (Do this all the time)*/
+html, body {
+    height: 100%;
+}
+
+/* Body style (do this all the time)*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+img{
+    width: 100%;
+}
+
+.container{
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh
+}
+
+.counter-div{
+    width: 40rem;
+    border: 2px solid var(--grey);
+    padding: 1rem;
+    background-color: var(--light-blue);
+    color: var(--white);
+    text-align: center;
+    border-radius: 5px;
+}
+
+.counter-div > *{
+    margin-bottom: 2rem;
+}
+
+.counter-div h1{
+    font-size: 2rem;
+}
+
+.count{
+    font-size: 4rem;
+}
+
+.buttons button{
+    padding: 1rem;
+    margin: 0 1rem;
+    font-size: 1.5rem;
+    color: var(--white);
+    font-weight: 700;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button.subtract{
+    background-color: orangered;
+}
+
+button.reset{
+    background-color: var(--white);
+    color: var(--black)
+}
+
+button.add{
+    background-color: green;
+}
+
+
