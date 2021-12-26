@@ -5,5 +5,5 @@ This project will add one to the current count when clicked on Add button and su
 # What did I learn from this project ?
 
 1. Return value of getElementByClass() and querySelector() is different.
-2. EvenDeligation and EvenListener
+2. EventDeligation and EventListener
 
